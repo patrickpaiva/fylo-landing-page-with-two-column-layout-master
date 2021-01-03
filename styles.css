@@ -62,10 +62,15 @@ header .content nav a:first-child {
 }
 .hero {
     width: 100vw;
+    background-image: url('/images/bg-curve-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: contain;
 }
 
 .hero .content {
     display: flex;
+    padding-bottom: 200px;
 }
 
 .hero .content .info {
@@ -118,6 +123,84 @@ header .content nav a:first-child {
 .hero .content img {
     max-width: 50%;
 }
+
+section.productive {
+    background-color: var(--color-light-grayish-blue);
+}
+
+section.productive .content {
+    display: flex;
+    padding-bottom: 100px;
+}
+
+section.productive .content img {
+    max-width: 40%;
+    object-fit: contain;
+}
+
+section.productive .content .section-text h2 {
+    font-size: 3.6rem;
+    margin-bottom: 40px;
+}
+
+section.productive .content .section-text p {
+    max-width: 75%;
+    font-size: 1.6rem;
+}
+
+section.productive .content .section-text > p span {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+    color: var(--color-moderate-cyan);
+    border-bottom: 1px solid var(--color-moderate-cyan);
+}
+
+section.productive .content .section-text .testimonial {
+    width: 400px;
+    margin-top: 40px;
+    background-color: white;
+    border-radius: 6px;
+    padding: 20px 35px;
+}
+
+section.productive .content .section-text .testimonial >img {
+    height: 18px;
+}
+
+section.productive .content .section-text .testimonial p {
+    max-width: 100%;
+    font-size: 1.3rem;
+    letter-spacing: 0.5px;
+    line-height: 2.3rem;
+}
+
+section.productive .content .section-text .testimonial .testimonial-owner {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+section.productive .content .section-text .testimonial .testimonial-owner img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+
+section.productive .content .section-text .testimonial .testimonial-owner p {
+    display: flex;
+    flex-direction: column;
+    margin-left: 8px;
+    font-size: 1.2rem;
+    letter-spacing: initial;
+    line-height: initial;
+}
+
+section.productive .content .section-text .testimonial .testimonial-owner p span {
+    font-weight: 700;
+}
+
 
 .attribution { 
     font-size: 1.1rem; text-align: center; 
